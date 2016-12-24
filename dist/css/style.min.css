@@ -4018,7 +4018,7 @@ input:checked~.form-check__box:after {
     width: 158px;
     height: 150px;
     margin: 0 auto;
-    background: url(../img/logo.png) no-repeat;
+    background: url(../img/websitelogo-01.png) no-repeat;
     background-size: contain;
     background-position: 50%;
     overflow: hidden;
@@ -4664,7 +4664,7 @@ input:checked~.form-check__box:after {
     display: block;
     width: 210px;
     height: 36px;
-    background: url(../img/logo.png) no-repeat;
+    background: url(../img/websitelogo-01.png) no-repeat;
     background-size: contain;
     background-position: 50%;
     overflow: hidden;
