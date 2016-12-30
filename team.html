@@ -15,6 +15,9 @@
   <title>The Team - Verba Maximus 2017</title>
   <link rel="icon" type="image/png" href="./dist/img/VM_Grey-01.png" />
   <link href="./dist/css/style.min.css" media="all" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/sweetalert2/6.2.9/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.2.9/sweetalert2.min.css">
+  <script src="./dist/js/team.js"></script>
   <script>
     ! function (e) {
       function n(o) {
@@ -167,10 +170,12 @@
     })();
     //]]>
   </script>
-  <!-- Google Tag Manager -->
+  <!-- Google Tag Manager (noscript) -->
   <noscript>
-    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WH9V3Q" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQML8Z9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
@@ -183,9 +188,9 @@
         dl = l != 'dataLayer' ? '&l=' + l : '';
       j.async = true;
       j.src =
-        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WH9V3Q');
+    })(window, document, 'script', 'dataLayer', 'GTM-PQML8Z9');
   </script>
   <!-- End Google Tag Manager -->
   <meta name="VIcurrentDateTime" content="636183614432700155" />
@@ -195,14 +200,9 @@
   <nav class="mobile-header" data-component="mobile-header">
     <div class="mobile-header__inner">
       <div class="mobile-header__logo-container">
-        <a class="mobile-header__logo" href="./index.html">Natural World Safaris</a>
+        <a class="mobile-header__logo" href="./index.html">Verba Maximus</a>
       </div>
       <div class="mobile-header__center">
-      </div>
-      <div class="mobile-header__menu">
-        <svg class="mobile-header__button" version="1.1" x="0" y="0" width="30" height="25" viewBox="0 0 30 25" data-reactid=".0.$provider.0.2.0.0.1.2.1">
-          <path d="M0 14h30v-3H0V14zM0 25h30v-3H0V25zM0 0v3h30V0H0z" data-reactid=".0.$provider.0.2.0.0.1.2.1.0"></path>
-        </svg>
       </div>
     </div>
   </nav>
@@ -227,10 +227,10 @@
         <section class="breadcrumb" data-component="breadcrumb">
           <ul class="breadcrumb__items">
             <li class="breadcrumb__item">
-              <a class="breadcrumb__link" href='/index.html'>Home</a>
+              <a class="breadcrumb__link" href='./index.html'>Home</a>
             </li>
             <li class="breadcrumb__item">
-              <a class="breadcrumb__link" href='/team.html'>Meet the team</a>
+              <a class="breadcrumb__link" href='./team.html'>Meet the team</a>
             </li>
           </ul>
         </section>
@@ -249,7 +249,7 @@
           <h3 class="meet-the-team__title"></h3>
           <ul class="meet-the-team__members">
             <li class="meet-the-team__member">
-              <a class="meet-the-team__link" href="/team/sumiran">
+              <a class="meet-the-team__link" onclick="sumiran();">
                 <div class="meet-the-team__content">
                   <noscript class="noscript-image">
                     <div role="img" aria-label="Sumiran Mittal" title="Sumiran Mittal" class="meet-the-team__image" style="background-image: url('./dist/img/team/2.jpg');"></div>
@@ -270,7 +270,7 @@
               </a>
             </li>
             <li class="meet-the-team__member">
-              <a class="meet-the-team__link" href="/team/shreya">
+              <a class="meet-the-team__link" onclick="shreya();">
                 <div class="meet-the-team__content">
                   <noscript class="noscript-image">
                     <div role="img" aria-label="Shreya Nimma" title="Shreya Nimma" class="meet-the-team__image" style="background-image: url('./dist/img/team/1.jpg');"></div>
@@ -279,7 +279,7 @@
                     data-max-width="1919" data-viewport="1.00" data-aspect="1.78" data-aspect-target="1.00"></div>
                   <div class="meet-the-team__mask"></div>
                   <div class="meet-the-team__overlay">
-                    <p class="meet-the-team__job">Random Position</p>
+                    <p class="meet-the-team__job">Part-of-the-fest-to-fulfill-female-quota</p>
                     <div class="meet-the-team__job-dash"></div>
                     <p class="meet-the-team__cta">Learn more about me</p>
                   </div>
@@ -291,7 +291,7 @@
               </a>
             </li>
             <li class="meet-the-team__member">
-              <a class="meet-the-team__link" href="/team/deek">
+              <a class="meet-the-team__link" onclick="deek();">
                 <div class="meet-the-team__content">
                   <noscript class="noscript-image">
                     <div role="img" aria-label="Deekshith Pachipulsu" title="Deekshith Pachipulsu" class="meet-the-team__image" style="background-image: url('./dist/img/team/3.jpg');"></div>
@@ -312,7 +312,7 @@
               </a>
             </li>
             <li class="meet-the-team__member">
-              <a class="meet-the-team__link" href="/team/monarch">
+              <a class="meet-the-team__link" onclick="momo();">
                 <div class="meet-the-team__content">
                   <noscript class="noscript-image">
                     <div role="img" aria-label="Monarch Moolchandani" title="Monarch Moolchandani" class="meet-the-team__image" style="background-image: url('./dist/img/team/4.jpg');"></div>
@@ -333,7 +333,7 @@
               </a>
             </li>
             <li class="meet-the-team__member">
-              <a class="meet-the-team__link" href="/team/tushar">
+              <a class="meet-the-team__link" onclick="tushar();">
                 <div class="meet-the-team__content">
                   <noscript class="noscript-image">
                     <div role="img" aria-label="Tushar Kanth" title="Tushar Kanth" class="meet-the-team__image" style="background-image: url('./dist/img/team/5.jpg');"></div>
@@ -348,6 +348,27 @@
                   </div>
                   <div class="meet-the-team__initial">
                     <p class="meet-the-team__name">Tushar Kanth</p>
+                    <div class="meet-the-team__name-dash"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="meet-the-team__member">
+              <a class="meet-the-team__link" onclick="suchit();">
+                <div class="meet-the-team__content">
+                  <noscript class="noscript-image">
+                    <div role="img" aria-label="Suchit Kar" title="Suchit Kar" class="meet-the-team__image" style="background-image: url('./dist/img/team/6.jpg');"></div>
+                  </noscript>
+                  <div role="img" aria-label="Suchit Kar" title="Suchit Kar" class="meet-the-team__image image" data-src="./dist/img/team/6.jpg"
+                    data-max-width="1919" data-viewport="1.00" data-aspect="1.78" data-aspect-target="1.00"></div>
+                  <div class="meet-the-team__mask"></div>
+                  <div class="meet-the-team__overlay">
+                    <p class="meet-the-team__job">Random Position</p>
+                    <div class="meet-the-team__job-dash"></div>
+                    <p class="meet-the-team__cta">Learn more about me</p>
+                  </div>
+                  <div class="meet-the-team__initial">
+                    <p class="meet-the-team__name">Suchit Kar</p>
                     <div class="meet-the-team__name-dash"></div>
                   </div>
                 </div>
@@ -382,14 +403,14 @@
           </div>
           <aside class="page-footer__footer">
             <div class="page-footer__awards">
-              <a href='index.html' class='page-footer__award'><img src='dist/img/VM_Grey-01.png' alt='VM Logo' height="32" width="32" hspace="7" class='page-footer__award-image'
+              <a href='./index.html' class='page-footer__award'><img src='dist/img/VM_Grey-01.png' alt='VM Logo' height="32" width="32" hspace="7" class='page-footer__award-image'
                 /></a>
             </div>
             <div class="page-footer__center">
               <span class="page-footer__copyright">© 2017 Verba Maximus 2017</span>
-              <a class="page-footer__link" href="events.html">Events</a>
+              <a class="page-footer__link" href="./events.html">Events</a>
               <a class="page-footer__link" href="./team.html">The Team</a>
-              <a class="page-footer__link" href="contact-us.html">Contact Us</a>
+              <a class="page-footer__link" href="./contact-us.html">Contact Us</a>
             </div>
             <div class="page-footer__social">
               <span class="page-footer__follow">Follow us</span>
