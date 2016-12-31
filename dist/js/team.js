@@ -34,7 +34,7 @@
     function momo() {
       swal({
         title: 'Monarch Moolchandani',
-        html: '<section class="body-text body-text--visible" data-component="body-text"><div class="body-text__inner"><h3 class="body-text__title">A Bit About Me</h3><div class="body-text__wysiwyg"><p>A current second year at BPHC, her love for language defines her.</p><p> After dabbling in the speakingarts when she was younger, she finds herself now most comfortable in front of a text editor,and more often than not, a fast approaching article deadline.</p><p> Those who work with her, complain that she likes Google Documents a little too much.</p><p class="body-text__quote">Insert Your Quote</p></div></div></section>',
+        html: '<section class="body-text body-text--visible" data-component="body-text"><div class="body-text__inner"><h3 class="body-text__title">A Bit About Me</h3><div class="body-text__wysiwyg"><p>The guy with the most ironic name, leader at heart but polite af. His surname sucks the the impact of the pretty name.</p><p>Stuck in engineering and finding his ways to exit. Confused. Foodie. Sapiosexual. Fancy AF.</p><p>Entrepreneurship and Business maybe. Verba Maximus speaks out to him personally and giving out his best to it.</p><p class="body-text__quote">Insert Your Quote</p></div></div></section>',
         imageUrl: './dist/img/team/4.jpg',
         imageWidth: 200,
         imageHeight: 200,
@@ -58,6 +58,17 @@
         title: 'Suchit Kar',
         html: '<section class="body-text body-text--visible" data-component="body-text"><div class="body-text__inner"><h3 class="body-text__title">A Bit About Me</h3><div class="body-text__wysiwyg"><p>A reluctant engineer, being fashioned from an avid reader and an occasional writer with a bug for quizzing.</p><p>Also, a painter with an eye for nature.</p><p>For all your event related queries, at your service.</p><p class="body-text__quote">Insert Your Quote</p></div></div></section>',
         imageUrl: './dist/img/team/6.jpg',
+        imageWidth: 200,
+        imageHeight: 200,
+        animation: true
+      })
+    }
+
+    function bharat() {
+      swal({
+        title: 'Bharadwaja Vemperala',
+        html: '<section class="body-text body-text--visible" data-component="body-text"><div class="body-text__inner"><h3 class="body-text__title">A Bit About Me</h3><div class="body-text__wysiwyg"><p>An environmental lover, a voracious reader and an economy lover who loves to take up challenges and responsibilities.</p><p>A great team worker.He is an easily approachable person who looks for simple solutions to complex problems.</p><p>His ultimate aim is to inspire and motivate people.</p><p class="body-text__quote">Insert Your Quote</p></div></div></section>',
+        imageUrl: './dist/img/team/7.jpg',
         imageWidth: 200,
         imageHeight: 200,
         animation: true
