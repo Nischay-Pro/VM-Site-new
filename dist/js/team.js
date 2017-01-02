@@ -56,7 +56,7 @@
     function suchit() {
       swal({
         title: 'Suchit Kar',
-        html: '<section class="body-text body-text--visible" data-component="body-text"><div class="body-text__inner"><h3 class="body-text__title">A Bit About Me</h3><div class="body-text__wysiwyg"><p>A reluctant engineer, being fashioned from an avid reader and an occasional writer with a bug for quizzing.</p><p>Also, a painter with an eye for nature.</p><p>For all your event related queries, at your service.</p><p class="body-text__quote">Insert Your Quote</p></div></div></section>',
+        html: '<section class="body-text body-text--visible" data-component="body-text"><div class="body-text__inner"><h3 class="body-text__title">A Bit About Me</h3><div class="body-text__wysiwyg"><p>A reluctant engineer, being fashioned from an avid reader and an occasional writer with a bug for quizzing.</p><p>Also, a painter with an eye for nature. <b><strong>Loves Fish!</strong></b></p><p>For all your event related queries, at your service.</p><p class="body-text__quote">Insert Your Quote</p></div></div></section>',
         imageUrl: './dist/img/team/6.jpg',
         imageWidth: 200,
         imageHeight: 200,
@@ -69,6 +69,17 @@
         title: 'Bharadwaja Vemperala',
         html: '<section class="body-text body-text--visible" data-component="body-text"><div class="body-text__inner"><h3 class="body-text__title">A Bit About Me</h3><div class="body-text__wysiwyg"><p>An environmental lover, a voracious reader and an economy lover who loves to take up challenges and responsibilities.</p><p>A great team worker.He is an easily approachable person who looks for simple solutions to complex problems.</p><p>His ultimate aim is to inspire and motivate people.</p><p class="body-text__quote">Insert Your Quote</p></div></div></section>',
         imageUrl: './dist/img/team/7.jpg',
+        imageWidth: 200,
+        imageHeight: 200,
+        animation: true
+      })
+    }
+
+    function abhi() {
+      swal({
+        title: 'Abhijeet Singh Shekhawat',
+        html: '<section class="body-text body-text--visible" data-component="body-text"><div class="body-text__inner"><h3 class="body-text__title">A Bit About Me</h3><div class="body-text__wysiwyg"><p>These words define me: anime fan, photographer, and a good friend. I learnt photography at 17 and have an interest in wildlife and street photography.</p><p>Working in a photography club has helped me learn a lot and experiment with new things.</p><p>As the Photography Head, I’ll always be willing to capture your pictures through my lens</p><p class="body-text__quote">Insert Your Quote</p></div></div></section>',
+        imageUrl: './dist/img/team/8.jpg',
         imageWidth: 200,
         imageHeight: 200,
         animation: true
