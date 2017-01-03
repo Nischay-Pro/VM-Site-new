@@ -13,6 +13,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="keywords" content="home keywords" />
 	<meta name="description" content="Verba Maximus, The Literary Fest of Bits Pilani Hyderabad Campus" />
+	<meta property="og:image" content="https://bitsvm.in/dist/img/thumbnail.png" />
+	<meta property="fb:page_id" content="1859517164319298" />
 	<link rel="icon" type="image/png" href="./dist/img/VM_Grey-01.png" />
 	<title>Verba Maximus 2017</title>
 	<link href="./dist/css/style.min.css" media="all" rel="stylesheet" />
@@ -158,20 +160,20 @@
 	<!-- End Google Tag Manager (noscript) -->
 	<!-- Google Tag Manager -->
 	<script>
-		(function (w, d, s, l, i) {
-			w[l] = w[l] || [];
-			w[l].push({
-				'gtm.start': new Date().getTime(),
-				event: 'gtm.js'
-			});
-			var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s),
-				dl = l != 'dataLayer' ? '&l=' + l : '';
-			j.async = true;
-			j.src =
-				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-			f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-PQML8Z9');
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-89694180-1', 'auto');
+		ga('send', 'pageview');
 	</script>
 	<!-- End Google Tag Manager -->
 	<script data-cfasync="false">
@@ -241,12 +243,12 @@
 					<div class="body-text__inner">
 						<h2 class="body-text__title">The Literary Fest</h2>
 						<div class="body-text__wysiwyg">
-							<p>If that thou were a true bibliophile, be truly welcome hither. We the students of BITS Pilani Hyderabad Campus are
-								proud to present to you Verba Maximus, our national annual literary fest! Verba Maximus is Latin for "words of the
-								greatest" and right from the pro shows and events to the competitors and organisers, everything lives up to this
-								title. This campus has successfully orchestrated five editions of this extravaganza, and the much awaited sixth edition-
-								Verba Maximus '17, is coming soon! On February 4th and 5th, "the game is afoot", as we return to throw you the party
-								of the year as a plethora of innovative events beckons.<br>
+							<p>Verba Maximus, BITS Pilani Hyderabad Campus’s pride and soul, is the national annual literary fest conducted every
+								year. The words, ‘Verba Maximus’, are Latin for “Words of the Greatest” and right from the pro-shows and events to
+								the competitors and organisers, everything lives up to this title. We have conducted five successful editions of
+								this fest, and the sixth edition – Verba Maximus ’17 – is much awaited! On February 4th and 5th, Verba Maximus returns
+								to present to you a 2-day literary whirlwind that’s hard to miss!
+								<br>
 								<br> To know more about the event please get in touch.<br>
 								<br>
 								<span class="body-text__quote">We would be more than happy to help you out.</span></p>
@@ -734,7 +736,6 @@
 						</div>
 					</div>
 				</section>
-				<!--
 				<section class="feature-links" data-component="feature-links">
 					<figure class="feature-links__figure">
 						<div class="feature-links__placeholder"></div>
@@ -758,7 +759,7 @@
 								to be a part of yet another fun-packed laughter extravaganza by our very own Kenneth Sebastian, the closing act to
 								the literary fest, Verba Maximus.</p>
 					</div>
-				</section>-->
+				</section>
 				<section class="feature-links" data-component="feature-links">
 					<figure class="feature-links__figure">
 						<div class="feature-links__placeholder"></div>
@@ -1152,6 +1153,27 @@
 					}
 			}
 		});
+	</script>
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '1859517164319298',
+				xfbml: true,
+				version: 'v2.7'
+			});
+			FB.AppEvents.logPageView();
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {
+				return;
+			}
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
 	</script>
 	<script src="dist/js/app.js" async defer></script>
 </body>
