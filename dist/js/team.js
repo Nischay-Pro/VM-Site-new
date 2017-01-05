@@ -34,7 +34,7 @@
     function momo() {
       swal({
         title: 'Monarch Moolchandani',
-        html: '<section class="body-text body-text--visible" data-component="body-text"><div class="body-text__inner"><h3 class="body-text__title">A Bit About Me</h3><div class="body-text__wysiwyg"><p>The guy with the most ironic name, leader at heart but polite. His surname sucks the the impact of the pretty name.</p><p>Stuck in engineering and finding his ways to exit. Confused. Foodie. Sapiosexual. Fancy.</p><p>Entrepreneurship and Business maybe. Verba Maximus speaks out to him personally and giving out his best to it.</p><p class="body-text__quote">Insert Your Quote</p></div></div></section>',
+        html: '<section class="body-text body-text--visible" data-component="body-text"><div class="body-text__inner"><h3 class="body-text__title">A Bit About Me</h3><div class="body-text__wysiwyg"><p>The guy with the most ironic name. A leader at heart but always polite. His surname sucks the impact of the pretty name.</p><p>He\'s stuck in engineering and finding ways to exit. Confused, foodie, sapiosexual, and fancy are words he\'d use to describe himself.</p><p>He\'s interested in entrepreneurship and business too. Verba Maximus speaks out to him personally and he\'s giving out his best to it.</p><p class="body-text__quote">Insert Your Quote</p></div></div></section>',
         imageUrl: './dist/img/team/4.jpg',
         imageWidth: 200,
         imageHeight: 200,
