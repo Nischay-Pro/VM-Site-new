@@ -96,3 +96,15 @@
         animation: true
       })
     }
+
+
+
+
+// Team Members
+    function log() {
+      swal({
+        title: 'Logistics Team Members',
+        html: '<h3 class="body-text__title">A Bit About Me</h3><p>Aditi Sharma<br>\r\nAditya Iyer<br>\r\nAnushree Hede<br>\r\nArchana Nagarajan<br>\r\nAshutosh Sistala<br>\r\nDebolina Sarkar<br>\r\nDeepti<br>\r\nHarshavardhan Bapat<br>\r\nHitesh Bhagchandani<br>\r\nKavya radhakrishnan<br>\r\nKrishna Vamshi Aruru<br>\r\nKshitij Grovor<br>\r\nKushagra K Chanda<br>\r\nKushal Agarwal<br>\r\nMadhan Thyagarajan<br>\r\nMadhav Singh<br>\r\nMudit Gupta<br>\r\nNidhi Sannametla<br>\r\nPiyush Agarwal<br>\r\nRajat Goel<br>\r\nRohith Pulipaka<br>\r\nRoshan Babu<br>\r\nSajal Jain<br>\r\nSamkit Jain<br>\r\nSanjana Kunde<br>\r\nSarthak Jain<br>\r\nShagun Srivastava<br>\r\nShalini Joshi<br>\r\nShri Akhil<br>\r\nSiri Narla<br>\r\nSowmya Theegalapallee<br>\r\nSrikar M<br>\r\nSugam Gandhi<br>\r\nSupriya Subramanian<br>\r\nSwarali Patil<br>\r\nSwarnima Mishra<br>\r\nTarun Raheja<br>\r\nUttara Ravi<br>\r\nV Kasyap Pasumarthy<br>\r\nVijitha Gunta<br>\r\nYohan MMR<br>\r\nRIshabh Agrawal<br>\r\nAakriti Shrivastava<br>\r\nAditya Jaya<br>\r\nAditya Lohana<br>\r\nAditya Sankara<br>\r\nAman Syed<br>\r\nAmrutha Varshini<br>\r\nArjun Lokireddy<br>\r\nArushi Paliwal<br>\r\nCharan Meka<br>\r\nHarsha Sista<br>\r\nharsha vardhan<br>\r\nJuhi Mittal<br>\r\nK Gokul<br>\r\nKarthik Nagaraj<br>\r\nKoushal D<br>\r\nKritika Kasliwal<br>\r\nMohd Aman<br>\r\nMonith Sourya<br>\r\nMradul Yadav<br>\r\nMukund<br>\r\nMusaiyab Ali Mirza<br>\r\nNikhil Gupta<br>\r\nNikhil Nair<br>\r\nNikhilesh Kumar Reddy<br>\r\nPratyush Agarwal<br>\r\nPratyush Goel<br>\r\nPriyanka Perumala<br>\r\nRahul Saini<br>\r\nRam Dheeraj<br>\r\nRamita Koleti<br>\r\nRohan Tammara<br>\r\nSachin P<br>\r\nSai Srikar<br>\r\nSaksham Sharma<br>\r\nSamanwith M<br>\r\nSamyak Gupta<br>\r\nShivani Naik<br>\r\nShreeya Jain<br>\r\nShubham Sharrma<br>\r\nSoham Majumdar<br>\r\nSuraj Loungani<br>\r\nSurya Vamsee<br>\r\nVignesh Shenoy<br>\r\nVipin Rallabandi<br>\r\nYashwant Vutla<\/p>',
+        animation: true
+      })
+    }
