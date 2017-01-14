@@ -8,6 +8,8 @@
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	background: url(../img/arrow.png) no-repeat right;
+	background-size: 25px 25px;
 }
 
 #randomlist::before {
