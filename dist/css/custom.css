@@ -12,42 +12,6 @@
 	background-size: 25px 25px;
 }
 
-#randomlist::before {
-	background-color: rgb(255, 255, 255);
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 3px;
-	border-left-color: rgba(0, 0, 0, 0.1);
-	border-left-style: solid;
-	border-left-width: 1px;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 3px;
-	bottom: 0px;
-	color: rgb(255, 255, 255);
-	content: "";
-	font-family: Arial,Helvetica;
-	font-size: 24px;
-	pointer-events: none;
-	position: absolute;
-	right: 0px;
-	text-align: center;
-	top: 0px;
-	width: 48px;
-}
-
-#randomlist::after{
-	color: rgba(0, 0, 0, 0.5);
-	content: "\25BC";
-	font-size: 15px;
-	height: 15px;
-	line-height: 15px;
-	margin-top: -7.5px;
-	pointer-events: none;
-	position: absolute;
-	right: 18px;
-	text-align: center;
-	top: 50%;
-}
-
 #artherlist{
 	margin-bottom: 32px;
 }
