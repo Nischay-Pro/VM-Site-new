@@ -1,0 +1,226 @@
+[
+  {
+    "hasChildren": true,
+    "hasPrimaryLinks": true,
+    "hasSecondaryLinks": false,
+    "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+    "parent": null,
+    "popoutMenu": true,
+    "primaryLinks": [
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Events",
+          "type": null,
+          "url": "./events.html"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Debate",
+        "type": null,
+        "url": "events/debate.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Events",
+          "type": null,
+          "url": "./events.html"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Diary",
+        "type": null,
+        "url": "events/diary.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Events",
+          "type": null,
+          "url": "./events.html"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Group",
+        "type": null,
+        "url": "events/group.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Events",
+          "type": null,
+          "url": "./events.html"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Jam",
+        "type": null,
+        "url": "events/jam.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Events",
+          "type": null,
+          "url": "./events.html"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Litquiz",
+        "type": null,
+        "url": "events/litquiz.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Events",
+          "type": null,
+          "url": "./events.html"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Moaf",
+        "type": null,
+        "url": "events/moaf.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Events",
+          "type": null,
+          "url": "./events.html"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Picture",
+        "type": null,
+        "url": "events/picture.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Events",
+          "type": null,
+          "url": "./events.html"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Sherlocked",
+        "type": null,
+        "url": "events/sherlocked.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Events",
+          "type": null,
+          "url": "./events.html"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Spellbee",
+        "type": null,
+        "url": "events/spellbee.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Events",
+          "type": null,
+          "url": "./events.html"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Tda",
+        "type": null,
+        "url": "events/tda.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Events",
+          "type": null,
+          "url": "./events.html"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Wof",
+        "type": null,
+        "url": "events/wof.html"
+      }
+    ],
+    "secondaryLinks": [],
+    "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+    "title": "Events",
+    "type": null,
+    "url": "./events.html"
+  }
+]

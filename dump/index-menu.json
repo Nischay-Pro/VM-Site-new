@@ -1,0 +1,74 @@
+[
+  {
+    "hasChildren": true,
+    "hasPrimaryLinks": true,
+    "hasSecondaryLinks": true,
+    "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+    "parent": null,
+    "popoutMenu": true,
+    "primaryLinks": [
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Home",
+          "type": null,
+          "url": "/"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Events",
+        "type": null,
+        "url": "./events.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Home",
+          "type": null,
+          "url": "/"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "The Team",
+        "type": null,
+        "url": "./team.html"
+      },
+      {
+        "hasChildren": false,
+        "id": "1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2",
+        "parent": {
+          "hasChildren": true,
+          "id": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "parent": null,
+          "popoutMenu": true,
+          "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+          "title": "Home",
+          "type": null,
+          "url": "/"
+        },
+        "popoutMenu": false,
+        "target": null,
+        "title": "Contact Us",
+        "type": null,
+        "url": "./contact-us.html"
+      }
+    ],
+    "secondaryLinks": [],
+    "target": "47a2e2da-bebc-4873-af5c-531dc0ef43bf",
+    "title": "Home",
+    "type": null,
+    "url": "/"
+  }
+]
