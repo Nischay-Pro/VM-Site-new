@@ -1,22 +1,35 @@
 <?php
 if($_GET['action']=='registered'){
     $vmid = $_GET['id'];
-    $message = 'You have successfully registered for the event.</p><p><strong>Your VM ID is : ' . $vmid . '</strong>';
-    $title = 'Registeration Complete';
+    $message = 'You have successfully registered for the event.</p><p><strong>Your VM ID is : ' . $vmid . '. </strong></p><p>A copy of the ID is also sent to your mail. Please provide your VM ID when attending the event.';
+    $title = 'Registration Complete';
+    $typeswal = 'success';
+    $messageswal = 'You have registered successfully! Your VM ID is : <strong>' .  echo $vmid . '</strong>';
+    $titleswal = 'Good Job!';
 }
 elseif($_GET['action']='error'){
     $message = 'You dun goofed boy ( ͡° ͜ʖ ͡°)';
     $errorid = $_GET['message'];
     if($errorid=='1'){
         $message = "Server Error 500. Contact Site for assistance.";
+            $typeswal = 'error';
+    $messageswal = 'Server Error 500. Contact Site for assistance.';
+    $titleswal = 'Oops!';
     }
     elseif($errorid=='2'){
         $message = "ID Already Registered. Please confirm you are not registering again.";
+                    $typeswal = 'error';
+    $messageswal = 'ID Already Registered. Please confirm you are not registering again.';
+    $titleswal = 'Oops!';
     }
     elseif($errorid=='3'){
         $message = "Server Error 500. Contact Site for assistance.";
+                    $typeswal = 'error';
+    $messageswal = 'Server Error 500. Contact Site for assistance.';
+    $titleswal = 'Oops!';
     }
     $title = 'Something went wrong';
+    $typeswal = 'error';
 }
 else {
     $message = "You don goofed boy";
@@ -283,10 +296,9 @@ else {
                     </div>
                     <script>
                         swal({
-                            title: '<b>Good Job!</b>',
-                            type: 'success',
-                            html: 'You have registered successfully! Your VM ID is : <strong>' +
-                                '<?php echo $vmid ?></strong><br><br><p>Please copy this ID and save it in an important location. You will be needed to provide this ID when attending the event.</p>'
+                            title: '<b>' + <?php echo $titleswal ?> + '</b>',
+                            type:  <?php echo $typeswal ?> ,
+                            html: <?php echo $messageswal ?>
                         })
                     </script>
             </section>
@@ -365,7 +377,7 @@ else {
                                     <a class="navigation__link" href="./index.html" data-target="47a2e2da-bebc-4873-af5c-531dc0ef43bf" data-back-link="">Home</a>
                                 </div>
                                 <div class="navigation__browse">
-                                    <a class="navigation__link" href="./events.html" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2">Events</a>
+                                    <a class="navigation__link" href="./register.html" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2">Register</a>
                                 </div>
                                 <div class="navigation__separator"></div>
                             </li>
