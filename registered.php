@@ -1,9 +1,25 @@
 <?php
 if($_GET['action']=='registered'){
-    $message = 'Registered';
+    $vmid = $_GET['id'];
+    $message = 'You have successfully registered for the event.</p><p><strong>Your VM ID is : ' . $vmid . '</strong>';
+    $title = 'Registeration Complete';
 }
 elseif($_GET['action']='error'){
-    $message = 'Error';
+    $message = 'You dun goofed boy ( ͡° ͜ʖ ͡°)';
+    $errorid = $_GET['message'];
+    if($errorid=='1'){
+        $message = "Server Error 500. Contact Site for assistance.";
+    }
+    elseif($errorid=='2'){
+        $message = "ID Already Registered. Please confirm you are not registering again.";
+    }
+    elseif($errorid=='3'){
+        $message = "Server Error 500. Contact Site for assistance.";
+    }
+    $title = 'Something went wrong';
+}
+else {
+    $message = "You don goofed boy";
 }
 ?>
 <!DOCTYPE html>
@@ -24,6 +40,8 @@ elseif($_GET['action']='error'){
     <title>Registeration</title>
     <link rel="icon" type="image/png" href="./dist/img/VM_Grey-01.png">
     <link href="./dist/css/style.min.css" media="all" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/sweetalert2/6.3.2/sweetalert2.min.css" media="all" rel="stylesheet">
+    <script async="" src="https://cdn.jsdelivr.net/sweetalert2/6.3.2/sweetalert2.min.js"></script>
     <script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script>
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script>
@@ -238,8 +256,8 @@ elseif($_GET['action']='error'){
             </div>
             <div class="header-banner__inner">
                 <span class="header-banner__pin"></span>
-                <span class="header-banner__section">Debate</span>
-                <h1 class="header-banner__title header-banner__title--small ">Debate</h1>
+                <span class="header-banner__section">Event and Proshow Registeration</span>
+                <h1 class="header-banner__title header-banner__title--small ">Registeration</h1>
                 <div class="header-banner__path-start"></div>
             </div>
             </section>
@@ -255,13 +273,22 @@ elseif($_GET['action']='error'){
             </section>
             <section class="body-text body-text--visible" data-component="body-text">
                 <div class="body-text__inner">
-                    <h2 class="body-text__title"><?php echo "hello world"; ?></h2>
+                    <h2 class="body-text__title">
+                        <?php echo $title; ?>
+                    </h2>
                     <div class="body-text__wysiwyg">
-                        <h5>
-                            <center><?php echo $message; ?></center>
-                        </h5>
+                        <p>
+                            <?php echo $message; ?>
+                        </p>
                     </div>
-                </div>
+                    <script>
+                        swal({
+                            title: '<b>Good Job!</b>',
+                            type: 'success',
+                            html: 'You have registered successfully! Your VM ID is : <strong>' +
+                                '<?php echo $vmid ?></strong><br><br><p>Please copy this ID and save it in an important location. You will be needed to provide this ID when attending the event.</p>'
+                        })
+                    </script>
             </section>
             <footer class="page-footer">
                 <div class="page-footer__inner">
@@ -311,52 +338,52 @@ elseif($_GET['action']='error'){
                     </div>
                 </aside>
             </footer>
+            </div>
         </div>
-    </div>
-    <div class="site__navigation">
-        <div class="site__navigation-inner">
-            <aside class="sticky" data-component="sticky">
-                <div class="sticky__closed">
-                    <div class="sticky__closed-outer">
-                        <div class="sticky__closed-inner">
-                            <div class="sticky__button"></div>
+        <div class="site__navigation">
+            <div class="site__navigation-inner">
+                <aside class="sticky" data-component="sticky">
+                    <div class="sticky__closed">
+                        <div class="sticky__closed-outer">
+                            <div class="sticky__closed-inner">
+                                <div class="sticky__button"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="sticky__open">
-                    <div class="sticky__open-inner">
+                    <div class="sticky__open">
+                        <div class="sticky__open-inner">
+                        </div>
                     </div>
-                </div>
-            </aside>
-            <nav class="navigation navigation--uninitialized" data-component="navigation" data-sections="[{&quot;title&quot;:&quot;Home&quot;,&quot;url&quot;:&quot;./index&quot;,&quot;id&quot;:&quot;47a2e2da-bebc-4873-af5c-531dc0ef43bf&quot;,&quot;type&quot;:null,&quot;parent&quot;:null,&quot;primaryLinks&quot;:[],&quot;secondaryLinks&quot;:[],&quot;popoutMenu&quot;:true,&quot;hasChildren&quot;:true,&quot;hasPrimaryLinks&quot;:true,&quot;hasSecondaryLinks&quot;:true,&quot;target&quot;:&quot;47a2e2da-bebc-4873-af5c-531dc0ef43bf&quot;}]">
-                <a class="navigation__logo" href="./index.html">Verba Maximus</a>
-                <div class="navigation__nano nano">
-                    <div class="navigation__nano-content nano-content">
-                        <ul class="navigation__sections"></ul>
-                        <li class="navigation__section navigation__section--active" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2" data-type="">
-                            <div class="navigation__back">
-                                <a class="navigation__link" href="./index.html" data-target="47a2e2da-bebc-4873-af5c-531dc0ef43bf" data-back-link="">Home</a>
-                            </div>
-                            <div class="navigation__browse">
-                                <a class="navigation__link" href="./events.html" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2">Events</a>
-                            </div>
-                            <div class="navigation__separator"></div>
-                        </li>
-                        <footer class="navigation__footer">
-                            <a class="navigation__phone" href="tel:80960 63146">
-                                <span class="navigation__phone-label">Tel</span>
-                                <span class="navigation__phone-number">80960 63146</span>
-                            </a>
-                            <a class="navigation__email" href="mailto:verbamaximus@gmail.com">
-                                <span class="navigation__email-text">verbamaximus@gmail.com</span>
-                            </a>
-                        </footer>
-                        </ul>
+                </aside>
+                <nav class="navigation navigation--uninitialized" data-component="navigation" data-sections="[{&quot;title&quot;:&quot;Home&quot;,&quot;url&quot;:&quot;./index&quot;,&quot;id&quot;:&quot;47a2e2da-bebc-4873-af5c-531dc0ef43bf&quot;,&quot;type&quot;:null,&quot;parent&quot;:null,&quot;primaryLinks&quot;:[],&quot;secondaryLinks&quot;:[],&quot;popoutMenu&quot;:true,&quot;hasChildren&quot;:true,&quot;hasPrimaryLinks&quot;:true,&quot;hasSecondaryLinks&quot;:true,&quot;target&quot;:&quot;47a2e2da-bebc-4873-af5c-531dc0ef43bf&quot;}]">
+                    <a class="navigation__logo" href="./index.html">Verba Maximus</a>
+                    <div class="navigation__nano nano">
+                        <div class="navigation__nano-content nano-content">
+                            <ul class="navigation__sections"></ul>
+                            <li class="navigation__section navigation__section--active" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2" data-type="">
+                                <div class="navigation__back">
+                                    <a class="navigation__link" href="./index.html" data-target="47a2e2da-bebc-4873-af5c-531dc0ef43bf" data-back-link="">Home</a>
+                                </div>
+                                <div class="navigation__browse">
+                                    <a class="navigation__link" href="./events.html" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2">Events</a>
+                                </div>
+                                <div class="navigation__separator"></div>
+                            </li>
+                            <footer class="navigation__footer">
+                                <a class="navigation__phone" href="tel:80960 63146">
+                                    <span class="navigation__phone-label">Tel</span>
+                                    <span class="navigation__phone-number">80960 63146</span>
+                                </a>
+                                <a class="navigation__email" href="mailto:verbamaximus@gmail.com">
+                                    <span class="navigation__email-text">verbamaximus@gmail.com</span>
+                                </a>
+                            </footer>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
-    </div>
     </div>
     <script>
         ! function (e) {
