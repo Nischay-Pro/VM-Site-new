@@ -24,7 +24,7 @@ if ($result = $conn->query($sql1)) {
         if ($conn->query($sql) === TRUE) {
             $sql2 = "UPDATE `vm_details` SET `value`=`value`+ 1 WHERE `id`='$list';";
                 if ($conn->query($sql2)) {
-                    $to = 'nischaypro@gmail.com';
+                    $to = $email;
 $subject = "Thank you for registering for our event.";
 
 $htmlContent = '
