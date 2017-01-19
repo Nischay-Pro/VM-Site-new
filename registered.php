@@ -1,3 +1,11 @@
+<?php
+if($_GET['action']=='registered'){
+    $message = 'Registered';
+}
+elseif($_GET['action']='error'){
+    $message = 'Error';
+}
+?>
 <!DOCTYPE html>
 <!--[if IE 7]> <html class="ie ie7 ltie10 ltie9 ltie8"><![endif]-->
 <!--[if IE 8]> <html class="ie ie8 ltie10 ltie9"><![endif]-->
@@ -247,72 +255,14 @@
             </section>
             <section class="body-text body-text--visible" data-component="body-text">
                 <div class="body-text__inner">
-                    <h2 class="body-text__title">Register</h2>
+                    <h2 class="body-text__title"><?php echo "hello world"; ?></h2>
                     <div class="body-text__wysiwyg">
                         <h5>
-                            <center>Yep</center>
+                            <center><?php echo $message; ?></center>
                         </h5>
                     </div>
                 </div>
             </section>
-            <div class="form form--single" data-component="form">
-                <form action="register.php" method="post">
-                    <div class="form-text form-text--text ">
-                        <label class="form-text__label">
-				<span class="form-text__label-text">First Name *</span>
-				<input maxlength="50" class="form-text__input" id="FirstName" name="FirstName" required="required" type="text" value="">
-	</label>
-                    </div>
-                    <div class="form-text form-text--text ">
-                        <label class="form-text__label">
-				<span class="form-text__label-text">Last Name *</span>
-				<input maxlength="50" class="form-text__input" id="LastName" name="LastName" required="required" type="text" value="">
-	</label>
-                    </div>
-                    <div class="form-text form-text--email ">
-                        <label class="form-text__label">
-				<span class="form-text__label-text">Email Address *</span>
-				<input maxlength="" class="form-text__input" id="EmailAddress" name="EmailAddress" required="required" type="email" value="">
-	</label>
-                    </div>
-                    <div class="form-text form-text--tel ">
-                        <label class="form-text__label">
-				<span class="form-text__label-text">Telephone Number *</span>
-				<input maxlength="25" class="form-text__input" id="TelephoneNumber" name="TelephoneNumber" required="required" type="tel" value="">
-	</label>
-                    </div>
-                    <div class="form-text form-text--text ">
-                        <label class="form-text__label">
-				<span class="form-text__label-text">College Name *</span>
-				<input maxlength="150" class="form-text__input" id="CollegeName" name="CollegeName" required="required" type="text" value="">
-	</label>
-                    </div>
-                    <div id="artherlist" class="">
-                        <label class="form-text__label">
-				<span class="form-text__label-text">Which event have you registered for *</span>
-				<select name="randomlist" id="randomlist">
-               <option value="1">Proshow Only</option>
-               <option value="2">Verba Maximus Only</option>
-               <option value="3">Verba Maximus and Proshow</option>
-                </select></label>
-                    </div>
-                    <div class="form-text form-text--text ">
-                        <label class="form-text__label">
-				<span class="form-text__label-text">Your BookMyShow ID *</span>
-				<input maxlength="150" class="form-text__input" id="BookMy" name="BookMy" required="required" type="text" value="">
-	</label>
-                    </div>
-                    <div class="form-submit">
-                        <p class="form-submit__error"></p>
-                        <p class="form-submit__redirect">You are being redirected. Click <a class="form-submit__link" href="/">here</a> if this takes longer
-                            than a few seconds.</p>
-                        <div class="form-submit__inner">
-                            <div class="form-submit__loader"></div>
-                            <input class="form-submit__input" type="submit" title="Send" value="Send">
-                        </div>
-                    </div>
-                </form>
-            </div>
             <footer class="page-footer">
                 <div class="page-footer__inner">
                     <div class="page-footer__our-address">
