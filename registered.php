@@ -4,7 +4,7 @@ if($_GET['action']=='registered'){
     $message = 'You have successfully registered for the event.</p><p><strong>Your VM ID is : ' . $vmid . '. </strong></p><p>A copy of the ID is also sent to your mail. Please provide your VM ID when attending the event.';
     $title = 'Registration Complete';
     $typeswal = 'success';
-    $messageswal = 'You have registered successfully! Your VM ID is : <strong>' .  echo $vmid . '</strong>';
+    $messageswal = 'You have registered successfully! Your VM ID is : <strong>' .  $vmid . '</strong>';
     $titleswal = 'Good Job!';
 }
 elseif($_GET['action']='error'){
@@ -17,9 +17,9 @@ elseif($_GET['action']='error'){
     $titleswal = 'Oops!';
     }
     elseif($errorid=='2'){
-        $message = "ID Already Registered. Please confirm you are not registering again.";
+        $message = "ID Already Registered. Please confirm you are not registering again. If you need to change your details contact us.";
                     $typeswal = 'error';
-    $messageswal = 'ID Already Registered. Please confirm you are not registering again.';
+    $messageswal = 'ID Already Registered. Please confirm you are not registering again. If you need to change your details contact us.';
     $titleswal = 'Oops!';
     }
     elseif($errorid=='3'){
@@ -33,6 +33,8 @@ elseif($_GET['action']='error'){
 }
 else {
     $message = "You don goofed boy";
+    $messageswal = 'You dun goofed boy ( ͡° ͜ʖ ͡°)';
+    $titleswal = '( ͡° ͜ʖ ͡°)';
 }
 ?>
 <!DOCTYPE html>
@@ -296,9 +298,9 @@ else {
                     </div>
                     <script>
                         swal({
-                            title: '<b>' + <?php echo $titleswal ?> + '</b>',
-                            type:  <?php echo $typeswal ?> ,
-                            html: <?php echo $messageswal ?>
+                            title: '<b>' + '<?php echo $titleswal ?>' + '</b>',
+                            type: '<?php echo $typeswal ?>',
+                            html: '<?php echo $messageswal ?>'
                         })
                     </script>
             </section>
