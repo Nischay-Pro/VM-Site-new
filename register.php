@@ -70,7 +70,7 @@ Thank you for registering for our event.
 <table id="footer" style="-premailer-cellpadding: 0; -premailer-cellspacing: 0; border: 0; border-collapse: separate; color: #7e7e7e; font-size: 14px; text-align: center; width: 100%" cellpadding="0" cellspacing="0">
 <tr>
 <td id="tanuki" style="padding: 40px 0 0">
-<img alt="VM Logo" src="https://bitsvm.in/dist/img/websitelogo-01.png" style="border: none; min-height: 50px; outline: none; width: 100px">
+<img alt="VM Logo" src="https://bitsvm.in/dist/img/logo.png" style="border: none; max-height: 64px; outline: none; width: 64px">
 </td>
 </tr>
 <tr>
