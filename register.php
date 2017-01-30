@@ -13,6 +13,9 @@ $email    = mysqli_real_escape_string($conn, trim($_POST["EmailAddress"]));
 $phone    = mysqli_real_escape_string($conn, trim($_POST["TelephoneNumber"]));
 $college  = mysqli_real_escape_string($conn, trim($_POST["CollegeName"]));
 $bookmy   = mysqli_real_escape_string($conn, trim($_POST["BookMy"]));
+if($bookmy='Spot Registration'){
+    $bookmy='Spot-Registration';
+}
 $list     = mysqli_real_escape_string($conn, trim($_POST["randomlist"]));
 $sql1 = "SELECT * FROM `vm_details` WHERE `id`='$list';";
 if ($result = $conn->query($sql1)) {

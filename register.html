@@ -13,7 +13,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="Register for the event.">
     <meta property="fb:page_id" content="1859517164319298">
-    <title>Registeration</title>
+    <title>Registration</title>
     <link rel="icon" type="image/png" href="./dist/img/VM_Grey-01.png">
     <link href="./dist/css/style.min.css" media="all" rel="stylesheet">
     <script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script>
@@ -230,8 +230,8 @@
             </div>
             <div class="header-banner__inner">
                 <span class="header-banner__pin"></span>
-                <span class="header-banner__section">Event and Proshow Registeration</span>
-                <h1 class="header-banner__title header-banner__title--small ">Registeration</h1>
+                <span class="header-banner__section">Event and Proshow Registration</span>
+                <h1 class="header-banner__title header-banner__title--small ">Registration</h1>
                 <div class="header-banner__path-start"></div>
             </div>
             </section>
@@ -241,7 +241,7 @@
                         <a class="breadcrumb__link" href="./index.html">Home</a>
                     </li>
                     <li class="breadcrumb__item">
-                        <a class="breadcrumb__link" href="./register.html">Registeration</a>
+                        <a class="breadcrumb__link" href="./register.html">Registration</a>
                     </li>
                 </ul>
             </section>
@@ -302,13 +302,15 @@
 				<input maxlength="150" class="form-text__input" id="BookMy" name="BookMy" required="required" type="text" value="">
 	</label>
                     </div>
+                    <input type="checkbox" onclick="enableDisable(this.checked, 'BookMy')" id="offline" value="offline">
+                    <label style="font: normal 16px !important;" for="offline">Check this if you are paying on-spot.</label>
                     <div class="form-submit">
                         <p class="form-submit__error"></p>
                         <p class="form-submit__redirect">You are being redirected. Click <a class="form-submit__link" href="/">here</a> if this takes longer
                             than a few seconds.</p>
                         <div class="form-submit__inner">
                             <div class="form-submit__loader"></div>
-                            <input class="form-submit__input" type="submit" title="Send" value="Send">
+                            <input class="form-submit__input" type="submit" title="Finish" value="Finish">
                         </div>
                     </div>
                 </form>
@@ -626,6 +628,16 @@
             js.src = "//connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
+        function enableDisable(bEnable, textBoxID) {
+            document.getElementById(textBoxID).disabled = bEnable;
+            if (bEnable) {
+                document.getElementById(textBoxID).value = 'Spot Registration';
+            } else {
+                document.getElementById(textBoxID).value = '';
+            }
+        }
     </script>
 </body>
 
