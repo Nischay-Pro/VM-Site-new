@@ -15,3 +15,6 @@
 #artherlist{
 	margin-bottom: 32px;
 }
+
+.navigation__link_custom{padding:1rem;color:#fff;font-size:22px !important;display:inline;vertical-align:middle;color:#9f9f9f;line-height:1em;font-size:20px;font-family:miso, sans-serif;text-decoration:none;text-transform:uppercase;border-bottom:1px solid transparent;-webkit-transition:border .5s ease, color 250ms ease;transition:border .5s ease, color 250ms ease}
+.navigation__link_custom:hover{border-bottom:1px solid #f15a22}

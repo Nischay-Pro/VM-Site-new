@@ -1,22 +1,64 @@
+<?php
+if($_GET['action']=='registered'){
+    $vmid = $_GET['id'];
+    $message = 'You have successfully registered for the event.</p><p><strong>Your VM ID is : ' . $vmid . '. </strong></p><p>A copy of the ID is also sent to your mail. Please provide your VM ID when attending the event.';
+    $title = 'Registration Complete';
+    $typeswal = 'success';
+    $messageswal = 'You have registered successfully! Your VM ID is : <strong>' .  $vmid . '</strong>';
+    $titleswal = 'Good Job!';
+}
+elseif($_GET['action']='error'){
+    $message = 'You dun goofed boy ( ͡° ͜ʖ ͡°)';
+    $errorid = $_GET['message'];
+    if($errorid=='1'){
+        $message = "Server Error 500. Contact Site for assistance.";
+            $typeswal = 'error';
+    $messageswal = 'Server Error 500. Contact Site for assistance.';
+    $titleswal = 'Oops!';
+    }
+    elseif($errorid=='2'){
+        $message = "ID Already Registered. Please confirm you are not registering again. If you need to change your details contact us.";
+                    $typeswal = 'error';
+    $messageswal = 'ID Already Registered. Please confirm you are not registering again. If you need to change your details contact us.';
+    $titleswal = 'Oops!';
+    }
+    elseif($errorid=='3'){
+        $message = "Server Error 500. Contact Site for assistance.";
+                    $typeswal = 'error';
+    $messageswal = 'Server Error 500. Contact Site for assistance.';
+    $titleswal = 'Oops!';
+    }
+    $title = 'Something went wrong';
+    $typeswal = 'error';
+}
+else {
+    $message = "You don goofed boy";
+    $messageswal = 'You dun goofed boy ( ͡° ͜ʖ ͡°)';
+    $titleswal = '( ͡° ͜ʖ ͡°)';
+}
+?>
 <!DOCTYPE html>
 <!--[if IE 7]> <html class="ie ie7 ltie10 ltie9 ltie8"><![endif]-->
 <!--[if IE 8]> <html class="ie ie8 ltie10 ltie9"><![endif]-->
 <!--[if gt IE 8]> <html class="ie ltie10 gtie8"><![endif]-->
 <!--[if !IE]><!-->
-<html class="no-js" lang="en">
+<html class="  no-js flexbox cssfilters  no-js" lang="en">
 <!--<![endif]-->
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="Do you love the enchanting world of literature? Do you feel the dusty old volumes calling out to you?"
-    />
-    <meta property="fb:page_id" content="1859517164319298" />
-    <title>Lit Quiz</title>
-    <link rel="icon" type="image/png" href="../dist/img/VM_Grey-01.png" />
-    <link href="../dist/css/style.min.css" media="all" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="Register for the event.">
+    <meta property="fb:page_id" content="1859517164319298">
+    <title>Registeration</title>
+    <link rel="icon" type="image/png" href="./dist/img/VM_Grey-01.png">
+    <link href="./dist/css/style.min.css" media="all" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/sweetalert2/6.3.2/sweetalert2.min.css" media="all" rel="stylesheet">
+    <script async="" src="https://cdn.jsdelivr.net/sweetalert2/6.3.2/sweetalert2.min.js"></script>
+    <script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script>
         ! function (e) {
             function n(o) {
@@ -147,11 +189,7 @@
         });
     </script>
     <noscript>
-        <style type="text/css">
-            .image {
-                display: none;
-            }
-        </style>
+        &lt;style type="text/css"&gt; .image { display: none; } &lt;/style&gt;
     </noscript>
     <script>
         window.activePage = "7456b6a9-b67b-4ead-bca0-e1bb8db06953";
@@ -162,7 +200,7 @@
     </script>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQML8Z9" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        &lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQML8Z9" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Google Tag Manager -->
@@ -182,15 +220,34 @@
         ga('create', 'UA-89694180-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <style>
+        #randomlist {
+            width: 100%;
+            border-radius: 6px;
+            padding: 16px;
+            border: 1px solid #9f9f9f;
+            font-size: 1.25em;
+            background: #fff;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: url(./dist/img/arrow.png) no-repeat right;
+            background-size: 25px 25px;
+        }
+        
+        #artherlist {
+            margin-bottom: 32px;
+        }
+    </style>
     <!-- End Google Tag Manager -->
-    <meta name="VIcurrentDateTime" content="636183614432700155" />
+    <meta name="VIcurrentDateTime" content="636183614432700155">
 </head>
 
 <body>
     <nav class="mobile-header" data-component="mobile-header">
         <div class="mobile-header__inner">
             <div class="mobile-header__logo-container">
-                <a class="mobile-header__logo" href="../index.html">Verba Maximus</a>
+                <a class="mobile-header__logo" href="./index.html">Verba Maximus</a>
             </div>
             <div class="mobile-header__center">
             </div>
@@ -207,106 +264,45 @@
                 <section class="header-banner header-banner--standard" data-component="header-banner">
                     <div class="header-banner__image-container">
                         <noscript class="noscript-image">
-                            <div role="img" aria-label="" title="" class="header-banner__image" style="background-image: url('../dist/img/events/lit.jpg');"></div>
+                            &lt;div role="img" aria-label="" title="" class="header-banner__image" style="background-image: url('./dist/img/background/clock5.jpg');"&gt;&lt;/div&gt;
                         </noscript>
-                        <div role="img" aria-label="" title="" class="header-banner__image image" data-src="../dist/img/events/lit.jpg" data-max-width="1649"
-                            data-viewport="0.80" data-aspect="2.75" data-aspect-target="1.00"></div>
+                        <div role="img" aria-label="" title="" class="header-banner__image image image--loaded" data-src="./dist/img/background/clock5.jpg?mw=1280"
+                            data-max-width="1649" data-viewport="0.80" data-aspect="2.75" data-aspect-target="1.00" style="background-image: url(&quot;./dist/img/background/clock5.jpg?mw=1280&quot;);"></div>
             </div>
             <div class="header-banner__inner">
                 <span class="header-banner__pin"></span>
-                <span class="header-banner__section">Lit Quiz</span>
-                <h1 class="header-banner__title header-banner__title--small ">Lit Quiz</h1>
+                <span class="header-banner__section">Event and Proshow Registeration</span>
+                <h1 class="header-banner__title header-banner__title--small ">Registeration</h1>
                 <div class="header-banner__path-start"></div>
             </div>
             </section>
             <section class="breadcrumb" data-component="breadcrumb">
                 <ul class="breadcrumb__items">
                     <li class="breadcrumb__item">
-                        <a class="breadcrumb__link" href='../index.html'>Home</a>
+                        <a class="breadcrumb__link" href="./index.html">Home</a>
                     </li>
                     <li class="breadcrumb__item">
-                        <a class="breadcrumb__link" href='../events.html'>Events</a>
+                        <a class="breadcrumb__link" href="./register.html">Registeration</a>
                     </li>
                 </ul>
             </section>
             <section class="body-text body-text--visible" data-component="body-text">
                 <div class="body-text__inner">
-                    <h2 class="body-text__title">Event Overview</h2>
+                    <h2 class="body-text__title">
+                        <?php echo $title; ?>
+                    </h2>
                     <div class="body-text__wysiwyg">
-                        <p>Do you love the enchanting world of literature? Do you feel the dusty old volumes calling out to
-                            you? Think you are the ultimate literature lover? Then we have just the event for you. This February,
-                            gear up as Verba Maximus brings to you, the Literature Quiz.</p>
-                        <p>Participate in teams of 3 or less and score as much as you can in the prelims to be in the top 8
-                            and qualify for the finals. Test your mettle in the finals and compete to win against the very
-                            best teams. So, take out those dusty volumes, revise your Shakespeare, Dickens and Tolkien and
-                            come participate in the Literature Quiz during Verba Maximus, 2017.</p>
+                        <p>
+                            <?php echo $message; ?>
+                        </p>
                     </div>
-                </div>
-            </section>
-            <section class="list-links list-links--visible" data-component="list-links">
-                <h3 class="list-links__title">Quick Info</h3>
-                <div class="list-links__items">
-                    <div class="list-links__item">
-                        <div class="list-links__prefix">
-                            <div class="list-links__circle">
-                                <span class="list-links__count">1</span>
-                            </div>
-                        </div>
-                        <div class="list-links__content">
-                            <div class="list-links__wysiwyg">
-                                <p><b>Duration of the Event: </b>3 Hours</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list-links__item">
-                        <div class="list-links__prefix">
-                            <div class="list-links__circle">
-                                <span class="list-links__count">2</span>
-                            </div>
-                        </div>
-                        <div class="list-links__content">
-                            <div class="list-links__wysiwyg">
-                                <p><b>Where is the Event: </b>At F103</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list-links__item">
-                        <div class="list-links__prefix">
-                            <div class="list-links__circle">
-                                <span class="list-links__count">3</span>
-                            </div>
-                        </div>
-                        <div class="list-links__content">
-                            <div class="list-links__wysiwyg">
-                                <p><b>What kind of Event: </b>Miscellaneous</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list-links__item">
-                        <div class="list-links__prefix">
-                            <div class="list-links__circle">
-                                <span class="list-links__count">4</span>
-                            </div>
-                        </div>
-                        <div class="list-links__content">
-                            <div class="list-links__wysiwyg">
-                                <p><b>Event Organizer: </b>Kushagra Agrawal</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="list-links__item">
-                        <div class="list-links__prefix">
-                            <div class="list-links__circle">
-                                <span class="list-links__count">5</span>
-                            </div>
-                        </div>
-                        <div class="list-links__content">
-                            <div class="list-links__wysiwyg">
-                                <p><b>Organizer Contact No: </b>9553326076</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <script>
+                        swal({
+                            title: '<b>' + '<?php echo $titleswal ?>' + '</b>',
+                            type: '<?php echo $typeswal ?>',
+                            html: '<?php echo $messageswal ?>'
+                        })
+                    </script>
             </section>
             <footer class="page-footer">
                 <div class="page-footer__inner">
@@ -335,57 +331,55 @@
                 </div>
                 <aside class="page-footer__footer">
                     <div class="page-footer__awards">
-                        <a href='../index.html' class='page-footer__award'><img src='../dist/img/VM_Grey-01.png' alt='VM Logo' height="32" width="32" hspace="7" class='page-footer__award-image'
-                            /></a>
-                        <a href='http://www.bits-finnovate.org/' class='page-footer__award'><img src='../dist/img/finnovate.png' alt='Finnovate' height="32" width="32" hspace="7" class='page-footer__award-image'
-                            /></a>
+                        <a href="./index.html" class="page-footer__award"><img src="./dist/img/VM_Grey-01.png" alt="VM Logo" height="32" width="32" hspace="7" class="page-footer__award-image"></a>
+                        <a href="http://www.bits-finnovate.org/" class="page-footer__award"><img src="./dist/img/finnovate.png" alt="Finnovate" height="32" width="32" hspace="7" class="page-footer__award-image"></a>
                     </div>
                     <div class="page-footer__center">
                         <span class="page-footer__copyright">© 2017 Verba Maximus 2017</span>
-                        <a class="page-footer__link" href="../events.html">Events</a>
-                        <a class="page-footer__link" href="../team.html">The Team</a>
-                        <a class="page-footer__link" href="../teamoc.html">The Team (OC)</a>
-                        <a class="page-footer__link" href="../contact-us.html">Contact Us</a>
-                        <a class="page-footer__link" href="../terms.html">Terms and Conditions</a>
+                        <a class="page-footer__link" href="./events.html">Events</a>
+                        <a class="page-footer__link" href="./team.html">The Team</a>
+                        <a class="page-footer__link" href="./teamoc.html">The Team (OC)</a>
+                        <a class="page-footer__link" href="./contact-us.html">Contact Us</a>
+                        <a class="page-footer__link" href="./terms.html">Terms and Conditions</a>
                         <a class="page-footer__link" href="http://www.bits-finnovate.org/">Bits Finnovate</a>
                     </div>
                     <div class="page-footer__social">
                         <span class="page-footer__follow">Follow us</span>
-                        <a href='https://www.facebook.com/verbamaximus' class='page-footer__social-link' target='_blank'></a>
-                        <a href='https://twitter.com/verbamaximus' target='_blank' class='page-footer__social-link' title='Twitter link'></a>
-                        <a href='https://www.youtube.com/channel/UCftyIPGFyJ6y3LnYvWHx4SA' class='page-footer__social-link' target='_blank'></a>
-                        <a href='https://www.instagram.com/vm.bitsh/' class='page-footer__social-link' target='_blank'></a>
+                        <a href="https://www.facebook.com/verbamaximus" class="page-footer__social-link" target="_blank"></a>
+                        <a href="https://twitter.com/verbamaximus" target="_blank" class="page-footer__social-link" title="Twitter link"></a>
+                        <a href="https://www.youtube.com/channel/UCftyIPGFyJ6y3LnYvWHx4SA" class="page-footer__social-link" target="_blank"></a>
+                        <a href="https://www.instagram.com/vm.bitsh/" class="page-footer__social-link" target="_blank"></a>
                     </div>
                 </aside>
             </footer>
+            </div>
         </div>
-    </div>
-    <div class="site__navigation">
-        <div class="site__navigation-inner">
-            <aside class="sticky" data-component="sticky">
-                <div class="sticky__closed">
-                    <div class="sticky__closed-outer">
-                        <div class="sticky__closed-inner">
-                            <div class="sticky__button"></div>
+        <div class="site__navigation">
+            <div class="site__navigation-inner">
+                <aside class="sticky" data-component="sticky">
+                    <div class="sticky__closed">
+                        <div class="sticky__closed-outer">
+                            <div class="sticky__closed-inner">
+                                <div class="sticky__button"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="sticky__open">
-                    <div class="sticky__open-inner">
+                    <div class="sticky__open">
+                        <div class="sticky__open-inner">
+                        </div>
                     </div>
-                </div>
-            </aside>
-            <nav class="navigation navigation--uninitialized" data-component="navigation" data-sections="[{&quot;title&quot;:&quot;Home&quot;,&quot;url&quot;:&quot;../index&quot;,&quot;id&quot;:&quot;47a2e2da-bebc-4873-af5c-531dc0ef43bf&quot;,&quot;type&quot;:null,&quot;parent&quot;:null,&quot;primaryLinks&quot;:[],&quot;secondaryLinks&quot;:[],&quot;popoutMenu&quot;:true,&quot;hasChildren&quot;:true,&quot;hasPrimaryLinks&quot;:true,&quot;hasSecondaryLinks&quot;:true,&quot;target&quot;:&quot;47a2e2da-bebc-4873-af5c-531dc0ef43bf&quot;}]">
-                <a class="navigation__logo" href="../index.html">Verba Maximus</a>
-                <div class="navigation__nano nano">
-                    <div class="navigation__nano-content nano-content">
-                        <ul class="navigation__sections"></ul>
+                </aside>
+                <nav class="navigation navigation--uninitialized" data-component="navigation" data-sections="[{&quot;title&quot;:&quot;Home&quot;,&quot;url&quot;:&quot;./index&quot;,&quot;id&quot;:&quot;47a2e2da-bebc-4873-af5c-531dc0ef43bf&quot;,&quot;type&quot;:null,&quot;parent&quot;:null,&quot;primaryLinks&quot;:[],&quot;secondaryLinks&quot;:[],&quot;popoutMenu&quot;:true,&quot;hasChildren&quot;:true,&quot;hasPrimaryLinks&quot;:true,&quot;hasSecondaryLinks&quot;:true,&quot;target&quot;:&quot;47a2e2da-bebc-4873-af5c-531dc0ef43bf&quot;}]">
+                    <a class="navigation__logo" href="./index.html">Verba Maximus</a>
+                    <div class="navigation__nano nano">
+                        <div class="navigation__nano-content nano-content">
+                            <ul class="navigation__sections"></ul>
                             <li class="navigation__section navigation__section--active" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2" data-type="">
                                 <div class="navigation__back">
-                                    <a class="navigation__link" href="../index.html" data-target="47a2e2da-bebc-4873-af5c-531dc0ef43bf" data-back-link>Home</a>
+                                    <a class="navigation__link" href="./index.html" data-target="47a2e2da-bebc-4873-af5c-531dc0ef43bf" data-back-link="">Home</a>
                                 </div>
                                 <div class="navigation__browse">
-                                    <a class="navigation__link" href="../events.html" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2">Events</a>
+                                    <a class="navigation__link" href="./register.html" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2">Register</a>
                                 </div>
                                 <div class="navigation__separator"></div>
                             </li>
@@ -398,11 +392,12 @@
                                     <span class="navigation__email-text">verbamaximus@gmail.com</span>
                                 </a>
                             </footer>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
-    </div>
     </div>
     <script>
         ! function (e) {

@@ -12,10 +12,9 @@
     <meta name="keywords" content="">
     <meta name="description" content="Register for the event.">
     <meta property="fb:page_id" content="1859517164319298">
-    <title>Registeration</title>
+    <title>Registration</title>
     <link rel="icon" type="image/png" href="./dist/img/VM_Grey-01.png">
     <link href="./dist/css/style.min.css" media="all" rel="stylesheet">
-    <link href="./dist/css/custom.css" media="all" rel="stylesheet">
     <script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script>
     <script async="" src="https://www.google-analytics.com/analytics.js"></script>
     <script>
@@ -179,6 +178,25 @@
         ga('create', 'UA-89694180-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <style>
+        #randomlist {
+            width: 100%;
+            border-radius: 6px;
+            padding: 16px;
+            border: 1px solid #9f9f9f;
+            font-size: 1.25em;
+            background: #fff;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: url(./dist/img/arrow.png) no-repeat right;
+            background-size: 25px 25px;
+        }
+        
+        #artherlist {
+            margin-bottom: 32px;
+        }
+    </style>
     <!-- End Google Tag Manager -->
     <meta name="VIcurrentDateTime" content="636183614432700155">
 </head>
@@ -211,8 +229,8 @@
             </div>
             <div class="header-banner__inner">
                 <span class="header-banner__pin"></span>
-                <span class="header-banner__section">Debate</span>
-                <h1 class="header-banner__title header-banner__title--small ">Debate</h1>
+                <span class="header-banner__section">Event and Proshow Registration</span>
+                <h1 class="header-banner__title header-banner__title--small ">Registration</h1>
                 <div class="header-banner__path-start"></div>
             </div>
             </section>
@@ -222,7 +240,7 @@
                         <a class="breadcrumb__link" href="./index.html">Home</a>
                     </li>
                     <li class="breadcrumb__item">
-                        <a class="breadcrumb__link" href="./register.html">Registeration</a>
+                        <a class="breadcrumb__link" href="./register.html">Registration</a>
                     </li>
                 </ul>
             </section>
@@ -231,7 +249,7 @@
                     <h2 class="body-text__title">Register</h2>
                     <div class="body-text__wysiwyg">
                         <h5>
-                            <center>Yep</center>
+                            <center>To register for the event please fill up this form below.</center>
                         </h5>
                     </div>
                 </div>
@@ -262,22 +280,36 @@
 				<input maxlength="25" class="form-text__input" id="TelephoneNumber" name="TelephoneNumber" required="required" type="tel" value="">
 	</label>
                     </div>
+                    <div class="form-text form-text--text ">
+                        <label class="form-text__label">
+				<span class="form-text__label-text">College Name *</span>
+				<input maxlength="150" class="form-text__input" id="CollegeName" name="CollegeName" required="required" type="text" value="">
+	</label>
+                    </div>
                     <div id="artherlist" class="">
                         <label class="form-text__label">
 				<span class="form-text__label-text">Which event have you registered for *</span>
-				<select id="randomlist">
-               <option value="1">Proshow Only</option>
-               <option value="2">Verba Maximus Only</option>
-               <option value="3">Verba Maximus and Proshow</option>
+				<select name="randomlist" id="randomlist">
+               <!-- <option value="2">Proshow Only</option> -->
+               <option value="1">Verba Maximus Only</option>
+               <!-- <option value="3">Verba Maximus and Proshow</option> -->
                 </select></label>
                     </div>
+                    <div class="form-text form-text--text ">
+                        <label class="form-text__label">
+				<span class="form-text__label-text">Your BookMyShow ID *</span>
+				<input maxlength="150" class="form-text__input" id="BookMy" name="BookMy" required="required" type="text" value="">
+	</label>
+                    </div>
+                    <input type="checkbox" onclick="enableDisable(this.checked, 'BookMy')" id="offline" value="offline">
+                    <label style="font: normal 16px !important;" for="offline">Check this if you are paying on-spot.</label>
                     <div class="form-submit">
                         <p class="form-submit__error"></p>
                         <p class="form-submit__redirect">You are being redirected. Click <a class="form-submit__link" href="/">here</a> if this takes longer
                             than a few seconds.</p>
                         <div class="form-submit__inner">
                             <div class="form-submit__loader"></div>
-                            <input class="form-submit__input" type="submit" title="Send" value="Send">
+                            <input class="form-submit__input" type="submit" title="Finish" value="Finish">
                         </div>
                     </div>
                 </form>
@@ -352,24 +384,24 @@
                 <div class="navigation__nano nano">
                     <div class="navigation__nano-content nano-content">
                         <ul class="navigation__sections"></ul>
-                            <li class="navigation__section navigation__section--active" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2" data-type="">
-                                <div class="navigation__back">
-                                    <a class="navigation__link" href="./index.html" data-target="47a2e2da-bebc-4873-af5c-531dc0ef43bf" data-back-link="">Home</a>
-                                </div>
-                                <div class="navigation__browse">
-                                    <a class="navigation__link" href="./events.html" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2">Events</a>
-                                </div>
-                                <div class="navigation__separator"></div>
-                            </li>
-                            <footer class="navigation__footer">
-                                <a class="navigation__phone" href="tel:80960 63146">
-                                    <span class="navigation__phone-label">Tel</span>
-                                    <span class="navigation__phone-number">80960 63146</span>
-                                </a>
-                                <a class="navigation__email" href="mailto:verbamaximus@gmail.com">
-                                    <span class="navigation__email-text">verbamaximus@gmail.com</span>
-                                </a>
-                            </footer>
+                        <li class="navigation__section navigation__section--active" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2" data-type="">
+                            <div class="navigation__back">
+                                <a class="navigation__link" href="./index.html" data-target="47a2e2da-bebc-4873-af5c-531dc0ef43bf" data-back-link="">Home</a>
+                            </div>
+                            <div class="navigation__browse">
+                                <a class="navigation__link" href="./register.html" data-id="1ca4f2a1-7ce8-4270-aef9-b9bf5a4c48c2">Register</a>
+                            </div>
+                            <div class="navigation__separator"></div>
+                        </li>
+                        <footer class="navigation__footer">
+                            <a class="navigation__phone" href="tel:80960 63146">
+                                <span class="navigation__phone-label">Tel</span>
+                                <span class="navigation__phone-number">80960 63146</span>
+                            </a>
+                            <a class="navigation__email" href="mailto:verbamaximus@gmail.com">
+                                <span class="navigation__email-text">verbamaximus@gmail.com</span>
+                            </a>
+                        </footer>
                         </ul>
                     </div>
                 </div>
@@ -596,8 +628,16 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-        <script src="dist/js/app.js" async defer></script>
-
+    <script>
+        function enableDisable(bEnable, textBoxID) {
+            document.getElementById(textBoxID).disabled = bEnable;
+            if (bEnable) {
+                document.getElementById(textBoxID).value = 'Spot Registration';
+            } else {
+                document.getElementById(textBoxID).value = '';
+            }
+        }
+    </script>
 </body>
 
 </html>
