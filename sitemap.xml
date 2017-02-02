@@ -8,92 +8,146 @@
 
 <url>
   <loc>https://bitsvm.in/</loc>
-  <lastmod>2017-01-07T20:25:15+00:00</lastmod>
+  <lastmod>2017-02-02T10:36:06+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/index.html</loc>
-  <lastmod>2017-01-07T20:25:15+00:00</lastmod>
+  <lastmod>2017-02-02T10:36:06+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/contact-us.html</loc>
-  <lastmod>2017-01-06T19:15:18+00:00</lastmod>
+  <lastmod>2017-02-02T11:55:17+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events/wof.html</loc>
-  <lastmod>2017-01-07T16:17:23+00:00</lastmod>
+  <lastmod>2017-01-26T20:59:55+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events/moaf.html</loc>
-  <lastmod>2017-01-07T16:17:22+00:00</lastmod>
+  <lastmod>2017-01-26T20:59:51+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events/diary.html</loc>
-  <lastmod>2017-01-07T16:17:24+00:00</lastmod>
+  <lastmod>2017-01-26T20:59:48+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events/jam.html</loc>
-  <lastmod>2017-01-07T16:17:20+00:00</lastmod>
+  <lastmod>2017-01-26T20:59:50+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events/sherlocked.html</loc>
-  <lastmod>2017-01-07T16:17:20+00:00</lastmod>
+  <lastmod>2017-01-26T20:59:53+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events/debate.html</loc>
-  <lastmod>2017-01-07T16:17:14+00:00</lastmod>
+  <lastmod>2017-01-26T20:59:48+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events/spellbee.html</loc>
-  <lastmod>2017-01-07T16:17:27+00:00</lastmod>
+  <lastmod>2017-01-26T20:59:53+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events/tda.html</loc>
-  <lastmod>2017-01-07T16:17:18+00:00</lastmod>
+  <lastmod>2017-01-26T20:59:54+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events/group.html</loc>
-  <lastmod>2017-01-07T16:17:16+00:00</lastmod>
+  <lastmod>2017-01-26T20:59:49+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events/picture.html</loc>
-  <lastmod>2017-01-07T16:17:24+00:00</lastmod>
+  <lastmod>2017-01-26T20:59:52+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events/litquiz.html</loc>
-  <lastmod>2017-01-07T16:17:28+00:00</lastmod>
+  <lastmod>2017-01-26T20:59:50+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bitsvm.in/schedule.htm</loc>
+  <lastmod>2017-02-02T08:18:24+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/team.html</loc>
-  <lastmod>2017-01-08T14:44:40+00:00</lastmod>
+  <lastmod>2017-01-29T08:26:01+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/events.html</loc>
-  <lastmod>2017-01-08T14:45:19+00:00</lastmod>
+  <lastmod>2017-02-02T08:18:29+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/teamoc.html</loc>
-  <lastmod>2017-01-08T15:27:34+00:00</lastmod>
+  <lastmod>2017-01-30T06:18:47+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bitsvm.in/terms.html</loc>
   <lastmod>2017-01-07T21:10:12+00:00</lastmod>
   <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bitsvm.in/dist/files/Brochure.pdf</loc>
+  <lastmod>2017-01-13T17:17:14+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bitsvm.in/schedule_files/sheet001.htm</loc>
+  <lastmod>2017-02-02T08:18:39+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bitsvm.in/schedule_files/tabstrip.htm</loc>
+  <lastmod>2017-02-02T08:18:45+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bitsvm.in/schedule_files/sheet002.htm</loc>
+  <lastmod>2017-02-02T08:18:41+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bitsvm.in/schedule_files/sheet003.htm</loc>
+  <lastmod>2017-02-02T08:18:44+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.51</priority>
 </url>
 </urlset>

@@ -117,6 +117,14 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
+     <link>https://bitsvm.in/schedule.htm</link>
+     <title>VM Schedule 2017</title>
+     <description>VM Schedule 2017</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
      <link>https://bitsvm.in/team.html</link>
      <title>The Team - Verba Maximus 2017</title>
      <description>About Us. Meet the Verba Maximus team, including our  and team heads.</description>
@@ -146,6 +154,46 @@
      <description>Verba Maximus OC Team</description>
      <ror:updatePeriod>always</ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bitsvm.in/dist/files/Brochure.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bitsvm.in/schedule_files/sheet001.htm</link>
+     <title>VM Schedule 2017</title>
+     <description>VM Schedule 2017</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bitsvm.in/schedule_files/tabstrip.htm</link>
+     <title></title>
+     
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bitsvm.in/schedule_files/sheet002.htm</link>
+     <title>VM Schedule 2017</title>
+     <description>VM Schedule 2017</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bitsvm.in/schedule_files/sheet003.htm</link>
+     <title>VM Schedule 2017</title>
+     <description>VM Schedule 2017</description>
+     <ror:updatePeriod>always</ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 </channel>
