@@ -296,6 +296,7 @@ else {
                             <?php echo $message; ?>
                         </p>
                     </div>
+                    <a href="./register.html" class="inpage-cta__link">Register Again</a>
                     <script>
                         swal({
                             title: '<b>' + '<?php echo $titleswal ?>' + '</b>',
